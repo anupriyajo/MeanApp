@@ -1,5 +1,6 @@
 /*************************************************************************************************************************/
 var mongoose   = require('mongoose');
+mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/movieDb');
 var Schema = mongoose.Schema;
 
